@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 
 const app = express();
 
@@ -12,6 +13,13 @@ app.listen(port, '0.0.0.0', () => {
 });
 
 // TODO cor추가
+
+app.use(
+  cors({
+    credentials: true,
+    origin: ['http://localhost:3000'],
+  })
+);
 
 app.get('/v1/profile', (_req: express.Request, res: express.Response) => {
   res.json(require('./data/profile.json'));
