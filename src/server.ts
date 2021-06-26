@@ -10,3 +10,9 @@ const port = Number(process.env.DUMMY_PLUG_PORT) || 8081;
 app.listen(port, '0.0.0.0', () => {
   console.log(`🚀 start dummy-plug. http://localhost:${port}/`);
 });
+
+// TODO cor추가
+
+app.get('/v1/profile', (_req: express.Request, res: express.Response) => {
+  res.json(require('./data/profile.json'));
+});
