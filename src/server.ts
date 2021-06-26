@@ -12,8 +12,6 @@ app.listen(port, '0.0.0.0', () => {
   console.log(`🚀 start dummy-plug. http://localhost:${port}/`);
 });
 
-// TODO cor추가
-
 app.use(
   cors({
     credentials: true,
@@ -23,4 +21,16 @@ app.use(
 
 app.get('/v1/profile', (_req: express.Request, res: express.Response) => {
   res.json(require('./data/profile.json'));
+});
+
+app.patch('/v1/users/:id', (req: express.Request, res: express.Response) => {
+  /*
+    fetch('http://localhost:8080/v1/users/1', {
+      method: 'PATCH',
+    })
+    .then(res => res.json())
+    .then(console.log)
+    .catch(err => console.log(err))
+  */
+  res.json({ status: `id:${req.params.id} patch success` });
 });
