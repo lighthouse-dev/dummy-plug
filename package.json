@@ -1,7 +1,7 @@
 {
-  "name": "dummy-plug",
+  "name": "simple-json-api",
   "version": "1.0.0",
-  "repository": "https://github.com/lighthouse-dev/dummy-plug.git",
+  "repository": "https://github.com/lighthouse-dev/simple-json-api.git",
   "author": "lighthouse-dev <lighthouse2.dev@gmail.com>",
   "license": "MIT",
   "scripts": {

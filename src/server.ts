@@ -9,7 +9,7 @@ app.disable('x-powered-by');
 const port = Number(process.env.DUMMY_PLUG_PORT) || 8080;
 
 app.listen(port, '0.0.0.0', () => {
-  console.log(`🚀 start dummy-plug. http://localhost:${port}/`);
+  console.log(`🚀 start simple-json-api. http://localhost:${port}/`);
 });
 
 app.use(

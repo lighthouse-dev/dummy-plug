@@ -1,4 +1,4 @@
-# dummy-plug
+# simple-json-api
 
 express 를 이용하여 정적 json 파일을 리턴하는 API 샘플 코드
 
@@ -17,13 +17,13 @@ express 를 이용하여 정적 json 파일을 리턴하는 API 샘플 코드
 Clone the project
 
 ```txt
-git clone https://github.com/lighthouse-dev/dummy-plug.git
+git clone https://github.com/lighthouse-dev/simple-json-api.git
 ```
 
 Go to the project directory
 
 ```txt
-cd dummy-plug
+cd simple-json-api
 ```
 
 Install dependencies
@@ -40,8 +40,8 @@ yarn run dev
 
 ### Add Entry Point
 
-1. [src/data](https://github.com/lighthouse-dev/dummy-plug/tree/main/src/data) 에 json파일 추가 (res.json()에 직접 기재해도 됨)
-2. [server.ts](https://github.com/lighthouse-dev/dummy-plug/blob/main/src/server.ts) 에 엔트리포인트 추가 & 위에서 생성한 json파일을 리턴하도록 추가
+1. [src/data](https://github.com/lighthouse-dev/simple-json-api/tree/main/src/data) 에 json파일 추가 (res.json()에 직접 기재해도 됨)
+2. [server.ts](https://github.com/lighthouse-dev/simple-json-api/blob/main/src/server.ts) 에 엔트리포인트 추가 & 위에서 생성한 json파일을 리턴하도록 추가
 
    ```ts
    app.get('/v1/profile', (_req: express.Request, res: express.Response) => {
